@@ -1,0 +1,263 @@
+:root {
+    --dark: #090a0a;
+    --gray: #151a21;
+    --gray-light: #252a32;
+    --blue: #25aeef;
+    --white: #ffffff;
+    --white-light: #c1c1c1;
+    --green: #68b162;
+    --red: #c76169;
+}
+
+body {
+    background: var(--gray);
+    font: 400 1rem "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+}
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+button {
+    background: none;
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: none;
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%
+    }
+}
+
+@media (max-width: 517px) {
+    .responsive {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.background-header {
+    background-size: cover;
+    background-image: url("https://img.freepik.com/vetores-gratis/banner-com-respingos-de-poeira-de-explosoes-de-po-colorido_107791-10877.jpg?size=626&ext=jpg&uid=R6749956&ga=GA1.1.458985153.1647521474");
+}
+
+.container {
+    box-sizing: border-box;
+    border-radius: 5px;
+    max-width: 1140px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.m-1 {
+    margin: 10px
+}
+
+.m-2 {
+    margin: 20px
+}
+
+.m-3 {
+    margin: 30px
+}
+
+.p-1 {
+    padding: 1px
+}
+
+.p-2 {
+    padding: 2px
+}
+
+.p-3 {
+    padding: 8px
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.rounded-t {
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+}
+
+.rounded-b {
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+}
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background: var(--gray-light);
+    padding: 2.4rem;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-img {
+    border-radius: 5px;
+    max-width: calc(480px / 4);
+    margin: 5px;
+}
+
+.profile-title {
+    font-weight: 600;
+    margin: 5px 0;
+    font-size: 2rem;
+}
+
+.profile-subtitle {
+    font-size: 1.025rem;
+}
+
+.header {
+    max-width: 1120px;
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 5px;
+}
+
+.background-glass-light {
+    background: rgba(205, 206, 255, 0.1);
+}
+
+.backrgound-gradient {
+    background: rgb(47, 59, 75);
+    background: linear-gradient(90deg, rgba(47, 59, 75, 1) 0%, rgba(40, 51, 65, 1) 35%, rgba(32, 41, 54, 1) 100%);
+}
+
+.color-white {
+    color: var(--white)
+}
+
+.color-blue {
+    color: var(--blue)
+}
+
+.color-green {
+    color: var(--green)
+}
+
+.color-red {
+    color: var(--red)
+}
+
+.addbutton {
+    color: var(--blue);
+    background: var(--gray-light);
+}
+
+table {
+    padding: 5px;
+}
+
+th {
+    text-align: start;
+    padding: 5px 20px;
+    font-weight: 100;
+    border-radius: 5px;
+}
+
+td {
+    margin: 10px
+}
+
+.removeBtn {
+    float: right;
+}
+
+.close-button {
+    float: right;
+}
+
+.save-button {
+    margin: 20px 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--green);
+}
+
+.save-button:hover {
+    filter: brightness(90%);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Tabela</title>
+</head>
+
+<body class="background">
+    <div class="modal-overlay">
+        <div class="modal">
+            <button onclick="closeModal()" class="close-button">x</button>
+            <div class="">
+                <h2>Adicionar Tecnologia</h2>
+
+                <div class="flex justify-center">
+                    <div class="w-full">
+                        <p>Linguagem/Tecnlogia</p>
+                        <input id="tec" />
+                    </div>
+                    <div>
+                        <p>Tempo</p>
+                        <input type="number" id="time" />
+                    </div>
+                </div>
+                <button onclick="addList()" class="w-full save-button">Salvar</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div>
+        <header class="header background-header p-3 rounded">
+            <div class="flex justify-between w-full align-center">
+                <div class="flex direction-column ">
+                    <div class="flex">
+                        <div>
+                            <img class="profile-img" src="./images/perfil.png" />
+                        </div>
+                        <div class="m-3">
+                            <h4 class="profile-title">Deividson Sabino</h4>
+                            <p class="profile-subtitle">Programador Frontend</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex">
+                        <button onclick="openModal()" class="addbutton card">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container justify-center direction-column">
+                <div class="w-full background-glass-light rounded-t">
+                    <div class="p-3">
+                        <h2>💻 Principais Tecnologias</h2>
+                    </div>
+                </div>
+
+                <div class="backrgound-gradient rounded-b">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="background-glass-light w-full">
+                                <th>LINGUAGEM / TECNOLIGIA</th>
+                                <th>TEMPO</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+                <div class="flex justify-center">
+                    <p>Deividson Sabino - 2022</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="./app.js">
+    </script>
+</body>
+
+</html>
